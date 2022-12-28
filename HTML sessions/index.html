@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">       
+       <meta name="author" content="Navneet">
+       <meta name="description" content="first lesson on HTML">
+      <title>HTML lesson 1</title>      
+     <link rel="stylesheet" href="styling.css">
+     <link rel="icon" href="images/html5.png" type="icon">
+      
+   </head>
+   <body>
+      <Header>
+         <h1> HTML tutorial1</h1> 
+         <nav aria-labelledby="Primary Navigation">
+            <h2 id="Primary Navigation"></h2>
+            <ul>
+               <li><a href="#Basic intro"> Intro</a></li>
+               <li><a href="#html entities"> Entities</a></li>
+               <li><a href="#html lists"> Lists</a></li>
+            </ul>
+
+         </nav> 
+      </Header> 
+      <Main>
+        <Section id="Basic intro">
+      <p id="home" style="color:black;"> We are learning <abbr title="Hypertext markup language">HTML</abbr>
+      </p>
+      <p>This <span style="color:red;">paragraph</span> is about <em>inline</em> elements
+      </p>
+      <p>New <strong>paragraph</strong> 2
+      </p>
+      <address>Hinjewadi Phase-1 <br> Pune, Maharshtra <br> Pin - 411057
+      </address>
+      <aside>
+         <details>
+            <summary>What this doc is all about</summary>
+            <p>This is an html session and tutorial doc</p>
+         </details>
+      </aside>
+   </Section>  
+      <hr>
+      <section id="html entities">
+      <p>
+         &nbsp;..line 1 <br>
+         &emsp;..line2  <br>
+         ..line3  <br>
+      </p>
+   </section>
+      <hr>
+   <section  id="html lists">
+      <p>
+         <h3>Ordered list</h3>
+         <ol>
+            <li>
+               list item 1
+            </li>
+            <li>
+               list item 2
+            </li>
+            <li>
+               list item 3
+            </li>
+         </ol>
+      </p> 
+      <p>
+         <h3>UnOrdered list</h3>
+         <ul>
+            <li>
+               list item 1
+            </li>
+            <li>
+               list item 2
+            </li>
+            <li>
+               list item 3
+            </li>
+         </ul>
+      </p> 
+      <p>
+         <h3>decsription list</h3>
+         <dl>
+            <dt> title 1</dt>
+            <dd> ths is the description for tile 1</dd>
+            <dt> title 2</dt>
+            <dd> ths is the description for tile 2</dd>
+            <dt> title 3</dt>
+            <dd> ths is the description for tile 3</dd>
+         </dl>
+      </p> 
+   </section>
+      <hr>
+   
+      <article id="links">
+         <li><a href="https://www.google.com" target="_parent">Go to google</a></li>
+         
+         <li><a href="#home">Go to home</a></li>
+
+         <a href="mailto:email@email.com">mail to me</a>
+
+         <a href="tel:12345678">call me</a>
+      </article>
+      
+      <hr>
+      <section id="lazy_loading">
+      <img src="images/html5.png" alt="HTML logo" title="html icon" width="300" height="300" loading="lazy"> 
+      <p>
+      <a href="images/html5.png" download>download the html logo</a>  
+   </p> 
+   <hr>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr>
+   <figure>
+      
+   <img src="images/js.jpeg" alt="JavacSript logo" title="JS logo" width="300" height="300" loading="lazy">
+   <figcaption>this is an image of JS logo</figcaption>
+</figure>
+</section>
+<section id="html tables">
+   <table>
+      
+      <thead>
+         <caption>This is a sample table</caption>
+      <tr>
+         <th>&nbsp;</th>
+         <th scope="col">
+            Item
+         </th>
+         <th scope="col">
+            price
+         </th>
+      
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th>Item1</th>
+         <td>Bat</td>
+         <td>1000</td>
+      </tr>
+      <tr>
+         <th>Item1</th>
+         <td>Ball</td>
+         <td>100</td>
+      </tr>
+      <tr>
+         <th rowspan="2">pricing</th>
+         <td rowspan="2"> Taxes</td>
+         <td>GST</td>     
+         
+         
+          
+      </tr>
+      <tr>
+         <td>SGST</td> 
+      </tr>
+      
+      
+   </tbody>
+   <tfoot>
+      <tr>
+         <td colspan="3"> this is table footer</td>
+      </tr>
+   </tfoot>
+   </table>
+
+</section>
+<br><br><br>
+<hr>
+
+<section id="HTML forms">
+
+<form action="https://httpbin.org/get" method="get">
+   <p>
+      <label for="firstName">First Name :</label>
+      <input type="text" name="Chetan" id="firstName"  required placeholder="Jack">
+   </p>
+   <p>
+      <label for="lastName">Last Name :</label>
+      <input type="text" name="lastName" id="lastName" autofocus placeholder="Smith">
+   </p>
+   <p>
+      <label for="passWord">Password :</label>
+      <input type="password" name="passWord" id="passWord" >
+   </p>
+   <p>
+      <label for="phoneNumber">Phone Number :</label>
+      <input type="text" name="phoneNumber" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{3}"
+       id="phoneNumber" placeholder="+9123456789">
+   </p>
+   <p>
+      <label for="Rating">Rating :</label>
+      <input type="number" name="Rating" min="0" max="10" step="0.5"
+       id="Rating" value="5">
+   </p>
+   <p>
+      <label for="dob">DOB :</label>
+      <input type="date" name="dob" id="dob" >
+   </p>
+   <p>
+      <label for="radiobtn">Accept :</label>
+      <input type="radio" name="radiobtn" id="radiobtn" value="Yes" >Yes</input>
+      <input type="radio" name="radiobtn" id="radiobtn" value="No">No</input>
+   </p>
+
+   <p>
+      <label for="chkbx">CHKBX :</label>
+      <input type="checkbox" name="chkbx" id="chkbx" value="Yes" >Yes</input>
+      <input type="checkbox" name="chkbx" id="chkbx" value="No">No</input>
+   </p>
+   <p>
+      <label for="sellist">SelectList :</label>
+      <select name="sellist" id="sellist" multiple>
+         <optgroup label="Recommended">
+         <option value="opt1" >1</option>
+         <option value="opt2">2</option>
+      </optgroup>
+      <optgroup label="Others">
+         <option value="opt3">3</option>
+         <option value="opt4">4</option>
+         <option value="opt5">5</option>
+      </optgroup>
+      </select>
+
+   </p>
+   <p>
+      <button id="submit">Submit</button>
+      <button id="Post" formaction="https://httpbin.org/post" method="put">Post</button>
+   </p>
+
+</form>
+</section>
+
+
+
+
+
+
+       
+
+
+</Main>  
+<footer>
+
+
+
+      <hr>
+      <p> &lt;&lt;&lt; &copy; <a href="aboutme.html">Navneet</a> &gt;  &gt; &gt;  </p>  
+   </footer>
+
+   </body>
+
+</html>
